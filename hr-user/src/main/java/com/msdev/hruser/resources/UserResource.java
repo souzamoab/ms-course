@@ -3,9 +3,11 @@ package com.msdev.hruser.resources;
 import com.msdev.hruser.entities.User;
 import com.msdev.hruser.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+@RefreshScope
 @RestController
 @RequestMapping(value = "/users")
 public class UserResource {
